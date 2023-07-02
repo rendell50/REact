@@ -1,32 +1,78 @@
 import '../App.css';
-import { Button,Navbar,Container,Badge,Nav,NavDropdown,Row,Col, Image, Card, Figure, Stack, ListGroup, CardGroup } from 'react-bootstrap';
+
+import { useEffect } from "react";
+import React, { useState } from 'react';
+import {Helmet} from "react-helmet";
+import { Button,Navbar,Container,Badge,Nav,NavDropdown,Row,Col, Image, Card, Figure, Stack, ListGroup, CardGroup,Modal  } from 'react-bootstrap';
+
+function MydModalWithGrid(props) {
+  
+  return (
+    <>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Using Grid in Modal
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body className="grid-example">
+        <Container>
+          <Row>
+   
+         
+          
+        
+          
+          </Row>
+        </Container>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+    </>
+
+  );
+}
 
 
 function Body() {
+  const [modalShow, setModalShow] = useState(false);
     return (
       <>
 
     
     <Container className='body' >
-
    
+    
+    
+    
     <Row>
         <Image src={require('../Images/pain.jpg')} />
         
       </Row> 
-
+    
+      
        <br/>
+       
        <br/>
     <Row>
 
         <Col sm={8}>
         <Figure>
         <h1>JointEase Pain Relief Spray</h1>
-      <Figure.Image
+      <Figure.Image className='mx-1'
         width={171}
         height={180}
         alt="171x180"
         src={require('../Images/bottle.jpg')}
+      />
+       <Figure.Image
+        width={171}
+        height={180}
+
+        alt="171x180"
+        src={require('../Images/benefits.jpg')}
       />
       
       <Figure.Caption>
@@ -46,8 +92,9 @@ function Body() {
       <Row>
       <Col sm={8}> 
             <Figure>
-              <h1>The Miracle of the Black Seed</h1>
-            <Figure.Image
+              <h2>One of the crucial Ingredients</h2>
+            
+            <Figure.Image className='mx-3'
               src={require('../Images/blackseed.jpg')}
             />
             
@@ -60,7 +107,7 @@ function Body() {
                   <p>●	liver and kidney function</p>
                   <p>●	infertility</p>
                   <p>●	cancer</p>
-                  <p>It treats body at the cellular level.</p>
+                  <p>It treats body at the cellular level!</p>
                   
             </Figure.Caption>
           </Figure>
@@ -82,7 +129,7 @@ function Body() {
         <Card.Text>
           <p>&#x2713; It’s great for people in sports </p>
           <p>&#x2713; People with joint problems (knee pain, back pain, arthritis)</p>
-          <p>&#x2713; Seniors.</p>
+          <p>&#x2713; Aged people.</p>
           </Card.Text>
       </Card>
 
@@ -91,7 +138,7 @@ function Body() {
       <Row>
         <Col sm={4}><Image src={require('../Images/spray.jpg')} thumbnail/></Col>
         <Col sm={8}>
-          <Card style={{ width: '20rem' }}>
+          <Card className='m-3' style={{ width: '20rem' }}>
           <Card.Header><h3>If you feel:</h3>  </Card.Header>
           <ListGroup variant="flush">
             <ListGroup.Item>-muscle pain</ListGroup.Item>
@@ -101,7 +148,7 @@ function Body() {
             <ListGroup.Item>-stiffness and cramps</ListGroup.Item>
           </ListGroup>
         </Card>
-          <br></br>
+         
     
         <p>	This spray will remove pain in a short time.</p>
         <p>Because of black seeds oil is one of the main components, it has a healing therapeutic and prophylactic effect. </p>
@@ -180,7 +227,7 @@ function Body() {
               <ListGroup.Item>Black Pepper Oil and Black seed oil.</ListGroup.Item>
             </ListGroup>
           </Card>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem' }} >
             <Card.Header>Shelf life:</Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item>Three years</ListGroup.Item>
@@ -197,10 +244,16 @@ function Body() {
         </Col>
         <br></br>
       </Row>
+    
+      <Button className="position-fixed bottom-0 end-0 m-3" variant="primary" onClick={() => setModalShow(true)}>
+      Order Now
+      </Button>
+
+      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
     </Container>
       </>
 
       );
     }
-  
+ 
   export default Body;

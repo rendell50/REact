@@ -8,6 +8,9 @@
   margin: 0;
 }
 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 /* .body{
   background-color: #FFF2CC;
 } */

@@ -71,7 +71,7 @@ function MydModalWithGrid(props) {
 }
 
 
-function Body() {
+function Filipino() {
   const [modalShow, setModalShow] = useState(false);
     return (
       <>
@@ -139,10 +139,10 @@ function Body() {
       />
       
       <Figure.Caption>
-      <p>Joint Ease Fast Action Pain Relief Spray is one of the most impressive and successful products of BARAKA Naturals (Sri Lanka).</p>
-      <p>●	It consists entirely of natural components. Therefore, it acts gently without causing side effects.</p>
-            <p>●	It provides instant pain relief for joints, muscular pains and back ache associated with arthritis, sprains, cramps and stiffness.</p>
-            <p>●	This unique formula is made out of a special blend of essential oils along with the complete goodness of black seeds.</p>
+      <p>Ang Joint Ease Fast Action Pain Relief Spray  ay isa sa pinakakahanga-hanga at matagumpay na produkto ng BARAKA Naturals sa (Sri Lanka).</p>
+      <p>● Galing sa natural na sangkap. Kaya walang negatibong epekto sa katawan.</p>
+            <p>●	Nag dudulot ng mabilis  na lunas sa ibat ibang sakit ng mga kasukasuan sa katawan.</p>
+            <p>●	Itong kakaibang formula ay may espesyal na sangkap ng langis ng black seed.</p>
             
       </Figure.Caption>
     </Figure>
@@ -155,22 +155,22 @@ function Body() {
       <Row>
       <Col sm={8}> 
             <Figure>
-              <h2>One of the crucial Ingredients</h2>
+              <h2>Ang pinaka mahalagang sangkap ay black seed oil</h2>
             
             <Figure.Image className='mx-3'
               src={require('../Images/blackseed.jpg')}
             />
             
             <Figure.Caption>
-            <p>Black seed oil is well known for its powerful medicinal properties, among which are:</p>
+            <p>Ang Black seed oil ay kilala sa malakas na pinaka mabisa sankap sa pagpapa galling tulad ng mga sumusunod:</p>
 
-            <p>●	wound healing</p>
-                  <p>●	skin, hair problems</p>
+            <p>●	gamot sa sugat </p>
+                  <p>●	balat at buhok problema</p>
                   <p>●	diabetes</p>
-                  <p>●	liver and kidney function</p>
+                  <p>●	sakit sa atay at bato </p>
                   <p>●	infertility</p>
                   <p>●	cancer</p>
-                  <p>It treats body at the cellular level!</p>
+                  <p>Ginagamot ang antas ng cellular ng katawan!</p>
                   
             </Figure.Caption>
           </Figure>
@@ -183,16 +183,16 @@ function Body() {
       <Card>
         <Card.Body>
           <Card.Text className='d-flex justify-content-center'>
-          <h1>For whom is this amazing remedy?</h1>
+          <h1>Para saan ang mahusay na gamot</h1>
       </Card.Text>
         
         </Card.Body>
         <Card.Img variant="bottom"  src={require('../Images/gympamore.jpg')} />
         <br></br>
         <Card.Text>
-          <p>&#x2713; It’s great for people in sports </p>
-          <p>&#x2713; People with joint problems (knee pain, back pain, arthritis)</p>
-          <p>&#x2713; Aged people.</p>
+          <p>&#x2713; Ito ay para sa aktibong tao tulad ng mga atleta </p>
+          <p>&#x2713; Tao may problema sa  pananakit ng katawan tulad ng sakit sa tuhod, likod, rayuma</p>
+          <p>&#x2713; May mga edad.</p>
           </Card.Text>
       </Card>
 
@@ -202,34 +202,34 @@ function Body() {
         <Col sm={4}><Image src={require('../Images/bag.jpg')} thumbnail/></Col>
         <Col sm={8}>
           <Card className='m-3' style={{ width: '20rem' }}>
-          <Card.Header><h3>If you feel:</h3>  </Card.Header>
+          <Card.Header><h3>Pag na kaka ranas ng:</h3>  </Card.Header>
           <ListGroup variant="flush">
-            <ListGroup.Item>-muscle pain</ListGroup.Item>
-            <ListGroup.Item>-joint pain</ListGroup.Item>
-            <ListGroup.Item>-got a sprain</ListGroup.Item>
-            <ListGroup.Item>-have back pain</ListGroup.Item>
-            <ListGroup.Item>-stiffness and cramps</ListGroup.Item>
+            <ListGroup.Item>-sakit ng kalamnan</ListGroup.Item>
+            <ListGroup.Item>-sakit ng kasukasuan </ListGroup.Item>
+            <ListGroup.Item>-pilay</ListGroup.Item>
+            <ListGroup.Item>-sakit ng likod</ListGroup.Item>
+            <ListGroup.Item>-paninigas at pulikat</ListGroup.Item>
           </ListGroup>
         </Card>
          
     
-        <p>	This spray will remove pain in a short time.</p>
-        <p>Because of black seeds oil is one of the main components, it has a healing therapeutic and prophylactic effect. </p>
-        <p>It is well suited as a first aid for minor muscle or joint injuries, as it has a powerful cooling effect.</p>
-        <p>Great thing to take along to a gym!</p>
+        <p>	Itong spray ay makakatulong matanggal ang sakit sa mabilis na oras.</p>
+        <p>Dahil sa sangkap na taglay ng black seed ito ay ng bibigay ng therapeutic at propilactic effect.</p>
+        <p>Ito ay mabisa unang pan lunas sakit ng katawan at kasukasukan meron syang taglay na malamig na pakiramdam. </p>
+        <p>Magandang dalhin habang nag ehersisyo!</p>
     </Col>
       </Row>
       <br></br>
 
       <Row>
-        <Col><h3>JointEase Pain Relief Spray has already gained popularity in US, Europe and Singapore.</h3>
+        <Col><h3>JointEase Pain Relief Spray kilala sa US, Europe at Singapore.</h3>
         <br></br>
         <CardGroup>
       <Card>
         <Card.Img variant="top" src={require('../Images/singapore.jpg')} />
         <Card.Body>
           <Card.Text>
-          The spray is great for senior people with joints pain, back pain. 
+          ito ay para sa mga may edad na namay sakit sa kasukasuan, likod.  
           </Card.Text>
         </Card.Body>
         {/* <Card.Footer>
@@ -241,7 +241,7 @@ function Body() {
         <Card.Body>
           
           <Card.Text>
-          Your grandmother will appreciate the lasting effect (up to 40 minutes) of the menthol, black pepper and essential oils on her sick knees. Great for applying to the neck-and-collar area before bed, providing a soothing and relaxing effect.
+          Ang iyong lola ay masisiyahan sa matagal na epekto hangang 40 minuto ng menthol, black pepper at essential oil para sa kanyang sakit sa tuhod. Magandang ilagay sa batok bago matulog at ito mag bibigay ng kaginhawaan ng katawan. 
 {' '}
           </Card.Text>
         </Card.Body>
@@ -253,7 +253,7 @@ function Body() {
         <Card.Img variant="top" src={require('../Images/tao.jpg')} />
         <Card.Body>
         <Card.Text>
-        Joints pain cannot be ignored!{' '}
+        HINDI DAPAT BALI WALAIN ANG SAKIT NG KATAWAN!{' '}
           </Card.Text>
         </Card.Body>
         {/* <Card.Footer>
@@ -267,15 +267,15 @@ function Body() {
 
       <Row >
         <Col>
-        <h5>As soon as the first signs of pain appear, it is necessary to urgently take action. Your body health is your responsibility!</h5>
+        <h5>Kapag nakaramdam ng sakit ng katawan dapat huwag baliwalain at bigyan ng agarang lunas. Responsibilidad mo ang iyong katawan kaya't dapat mong alagaan!</h5>
         <br></br>
-        <p>&#x2713; Instant pain relief</p>
-        <p>&#x2713; Treatment of affected tissues</p>
-        <p>&#x2713; Prevention of joint and bone diseases</p>
-        <p>&#x2713; Ensures tissue regeneration</p>
+        <p>&#x2713; Agarang lunas</p>
+        <p>&#x2713; Pag iwas sa sakit ng kasukasuan at iba pang sakit sa buto.</p>
+        <p>&#x2713; Panglunas ng joints at mga sakit sa buto.</p>
+        <p>&#x2713; Pagpapabata ng tissue ng katawan</p>
         <br></br>
-        <h5>The spray is totally safe and can be use for the whole family, even for kids!</h5>
-        <h5>For senior citizens additional 5% discount!</h5>
+        <h5>Ang Spray na ito ay hindi delikado sa para sa pamilya, pwedeng gamitin ng mga bata!</h5>
+        <h5> May diskwento na 5% para sa mga senior citizens!</h5>
         <br></br>
       
         
@@ -290,4 +290,4 @@ function Body() {
       );
     }
  
-  export default Body;
+  export default Filipino;

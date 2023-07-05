@@ -1,25 +1,31 @@
 
 
 import '../App.css';
-import { Button,Navbar,Container,Image,Nav,NavDropdown,Col, Row  } from 'react-bootstrap';
+import { Button,Navbar,Container,Image,Nav,NavDropdown,Col, Row, Breadcrumb  } from 'react-bootstrap';
 
 
 
-function Navbrand() {
+
+
+
+function Navigation() {
     return (
       <>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
-      <Container fluid>
+     
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
+      <Container >
         <Row>
           <Col xs={6} md={4} >
-          <Navbar.Brand href="#home">
-          
+          <Navbar.Brand href="">
+
               <Image src={require('../Images/baraka.png')} />
             
           </Navbar.Brand>
           </Col>   
         </Row>
-       
+      
+
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -37,19 +43,23 @@ function Navbrand() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav> */}
+
+        
+          <Breadcrumb>
+         
+          <Breadcrumb.Item href="">Filipino</Breadcrumb.Item>
+          <Breadcrumb.Item active>English</Breadcrumb.Item>
+        </Breadcrumb>
+       
         </Navbar.Collapse>
 
         
       </Container>
     </Navbar>
+     
+      
       </>
     );
   }
 
-export default Navbrand;
+export default Navigation;

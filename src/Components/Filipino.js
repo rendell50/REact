@@ -76,7 +76,7 @@ function Filipino() {
     return (
       <>
 
-<Image lg={2} src={require('../Images/pain.jpg')}fluid/>
+<Image lg={2}  src={require('../Images/pain.jpg')}fluid/>
     <Container className='body' >
    
  
@@ -90,8 +90,10 @@ function Filipino() {
       
        <br/>
        <Row className='m-4'>
-        <Col xs={4} md={4} lg={2}><Image src={require('../Images/bote.jpg')} thumbnail/></Col>
-        <Col xs={8} md={8} lg={10} className='align-items-center'>
+        <Col xs={4} md={4} lg={2}><Image src={require('../Images/bote.jpg')} thumbnail/>
+        
+        </Col>
+        <Col xs={8} md={8} lg={10} >
           <h1>ORDER NOW TO GET 40% OFF! </h1>
 
           <div className='d-flex'>
@@ -101,18 +103,29 @@ function Filipino() {
             <p>  Sold 1486 </p> <p className='mx-3'>left for sale offer 524</p>
           </div> 
           <div className='d-flex'>
-                <Button href="#order" className="" variant="danger">
+                <Button href="#order" className="" size="sm" variant="danger">
               Order Now
               </Button>
-              <Button className='mx-3'variant="primary" onClick={() => setModalShow(true)}>
+              <Button className='mx-2'variant="primary" size="sm"onClick={() => setModalShow(true)}>
               Product Details
               </Button>
               <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
             </div>
+            <div className='my-3' >
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            </div>
+                   
           </Col>
          
           <Col xs={8} md={8} lg={10}>
-          
+          <div>
+             <h4>Product Reviews</h4> 
+            </div>  
          </Col>
           
        
@@ -142,7 +155,7 @@ function Filipino() {
       <p>Ang Joint Ease Fast Action Pain Relief Spray  ay isa sa pinakakahanga-hanga at matagumpay na produkto ng BARAKA Naturals sa (Sri Lanka).</p>
       <p>● Galing sa natural na sangkap. Kaya walang negatibong epekto sa katawan.</p>
             <p>●	Nag dudulot ng mabilis  na lunas sa ibat ibang sakit ng mga kasukasuan sa katawan.</p>
-            <p>●	Itong kakaibang formula ay may espesyal na sangkap ng langis ng black seed.</p>
+            <p>●	May kakaibang formula at may espesyal na sangkap ng langis ng black seed.</p>
             
       </Figure.Caption>
     </Figure>
@@ -162,10 +175,10 @@ function Filipino() {
             />
             
             <Figure.Caption>
-            <p>Ang Black seed oil ay kilala sa malakas na pinaka mabisa sankap sa pagpapa galling tulad ng mga sumusunod:</p>
+            <p>Kilala ang Black seed oil sa malakas na pinaka mabisa sangkap sa pagpapa galling tulad ng mga sumusunod: </p>
 
             <p>●	gamot sa sugat </p>
-                  <p>●	balat at buhok problema</p>
+                  <p>●	balat at hairloss</p>
                   <p>●	diabetes</p>
                   <p>●	sakit sa atay at bato </p>
                   <p>●	infertility</p>
@@ -205,7 +218,7 @@ function Filipino() {
           <Card.Header><h3>Pag na kaka ranas ng:</h3>  </Card.Header>
           <ListGroup variant="flush">
             <ListGroup.Item>-sakit ng kalamnan</ListGroup.Item>
-            <ListGroup.Item>-sakit ng kasukasuan </ListGroup.Item>
+            <ListGroup.Item>-sakit ng kasukasuhan </ListGroup.Item>
             <ListGroup.Item>-pilay</ListGroup.Item>
             <ListGroup.Item>-sakit ng likod</ListGroup.Item>
             <ListGroup.Item>-paninigas at pulikat</ListGroup.Item>
@@ -213,9 +226,9 @@ function Filipino() {
         </Card>
          
     
-        <p>	Itong spray ay makakatulong matanggal ang sakit sa mabilis na oras.</p>
-        <p>Dahil sa sangkap na taglay ng black seed ito ay ng bibigay ng therapeutic at propilactic effect.</p>
-        <p>Ito ay mabisa unang pan lunas sakit ng katawan at kasukasukan meron syang taglay na malamig na pakiramdam. </p>
+        <p>Itong spray ay makakatulong na matangal ang sakit ng mabilis.</p>
+        <p>Dahil sa sangkap na taglay ng black seed ito ay nag bibigay ng therapeutic at propilactic effect.</p>
+        <p>Ito ay mabisa unang pan lunas sakit ng katawan at kasukasuhan, mayroon syang taglay na malamig na pakiramdam. </p>
         <p>Magandang dalhin habang nag ehersisyo!</p>
     </Col>
       </Row>
@@ -229,7 +242,7 @@ function Filipino() {
         <Card.Img variant="top" src={require('../Images/singapore.jpg')} />
         <Card.Body>
           <Card.Text>
-          ito ay para sa mga may edad na namay sakit sa kasukasuan, likod.  
+          Para ito sa mga may edad na na may sakit sa kasukasuan at  likod.   
           </Card.Text>
         </Card.Body>
         {/* <Card.Footer>
@@ -241,8 +254,8 @@ function Filipino() {
         <Card.Body>
           
           <Card.Text>
-          Ang iyong lola ay masisiyahan sa matagal na epekto hangang 40 minuto ng menthol, black pepper at essential oil para sa kanyang sakit sa tuhod. Magandang ilagay sa batok bago matulog at ito mag bibigay ng kaginhawaan ng katawan. 
-{' '}
+          Ang iyong lola ay masisiyahan sa matagal na epekto hangang 40 minuto ng menthol, black pepper at essential oil para sa kanyang sakit sa tuhod. Magandang ilagay sa batok bago matulog at itoy mag bibigay ng kaginhawaan sa katawan.
+{' '} 
           </Card.Text>
         </Card.Body>
         {/* <Card.Footer>
@@ -267,7 +280,7 @@ function Filipino() {
 
       <Row >
         <Col>
-        <h5>Kapag nakaramdam ng sakit ng katawan dapat huwag baliwalain at bigyan ng agarang lunas. Responsibilidad mo ang iyong katawan kaya't dapat mong alagaan!</h5>
+        <h5>Pag nakaramdam ng sakit ng katawan dapat huwag baliwalain at bigyan ng agarang lunas. Responsibilidad mo ang iyong katawan kayat dapat mong alagaan!</h5>
         <br></br>
         <p>&#x2713; Agarang lunas</p>
         <p>&#x2713; Pag iwas sa sakit ng kasukasuan at iba pang sakit sa buto.</p>

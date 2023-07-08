@@ -90,9 +90,11 @@ function Body() {
       
        <br/>
        <Row className='m-4'>
-        <Col xs={4} md={4} lg={2}><Image src={require('../Images/bote.jpg')} thumbnail/></Col>
-        <Col xs={8} md={8} lg={10} className='align-items-center'>
-          <h1>ORDER NOW TO GET 40% OFF! </h1>
+        <Col xs={4} md={4} lg={2}><Image src={require('../Images/bote.jpg')} thumbnail/>
+        
+        </Col>
+        <Col xs={8} md={8} lg={10} >
+          <h5>ORDER NOW TO GET 40% OFF! </h5>
 
           <div className='d-flex'>
           <p><s>&#8369;2650</s> </p> <p className='mx-3'>&#8369;1590</p>
@@ -101,18 +103,29 @@ function Body() {
             <p>  Sold 1486 </p> <p className='mx-3'>left for sale offer 524</p>
           </div> 
           <div className='d-flex'>
-                <Button href="#order" className="" variant="danger">
+                <Button href="#order" className="" size="sm" variant="danger">
               Order Now
               </Button>
-              <Button className='mx-3'variant="primary" onClick={() => setModalShow(true)}>
+              <Button className='mx-2'variant="primary" size="sm"onClick={() => setModalShow(true)}>
               Product Details
               </Button>
               <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
             </div>
+            <div className='my-3' >
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            </div>
+                   
           </Col>
          
           <Col xs={8} md={8} lg={10}>
-          
+          <div>
+             <h4>Product Reviews</h4> 
+            </div>  
          </Col>
           
        

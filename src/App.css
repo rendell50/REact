@@ -11,6 +11,10 @@
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+
+.fa-star{
+  color: #FBC220;
+}
 /* .body{
   background-color: #FFF2CC;
 } */
